@@ -1,0 +1,25 @@
+﻿<Window x:Class="prakt5.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prakt5"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="300" Width="350">
+    <Grid Background="#FFC39AE1">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Пекарня Веселый хлебушек" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Segoe Script" FontSize="22" Foreground="#FF1D0331"/>
+        <TextBlock Text="Авторизация" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Bahnschrift SemiBold" FontSize="18" Foreground="#FF64189B"/>
+        <DataGrid x:Name="BakeryDgr" Grid.Row="2" Width="300" Height="2" VerticalAlignment="Top"/>
+        <TextBox x:Name="LoginTbx" Grid.Row="2" VerticalAlignment="Center" Text="Логин" GotFocus="LoginTbx_GotFocus" LostFocus="LoginTbx_LostFocus" />
+        <PasswordBox x:Name="PasswordTbx" Grid.Row="3" VerticalAlignment="Center" GotFocus="PasswordTbx_GotFocus" LostFocus="PasswordTbx_LostFocus"/>
+        <Button Grid.Row="4" Content="Авторизоваться" Click="Authorization_Click" Width="250" Height="30" Background="#FF9047C5" Foreground="White" FontSize="16" FontFamily="Bahnschrift SemiBold"/>
+    </Grid>
+</Window>

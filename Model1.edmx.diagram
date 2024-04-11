@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7c3818b0a3ae48228b6f51c5cf60e4a5" Name="Diagram1">
+        <EntityTypeShape EntityType="P5Model.Categories" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Composition" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Employees" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Indredients" Width="1.5" PointX="9" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.LoginData" Width="1.5" PointX="10.5" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Orders" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.OrdersProduct" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Product" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Roles" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Stocks" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Suppliers" Width="1.5" PointX="11.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.sysdiagrams" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="P5Model.Warehouse" Width="1.5" PointX="13.5" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="P5Model.FK__Product__Categor__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Compositi__produ__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Employees__order__4D5F7D71" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Employees__produ__4E53A1AA" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Employees__Role___4F47C5E3" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__LoginData__emplo__5F7E2DAC" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Warehouse__emplo__56E8E7AB" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Suppliers__Indre__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__OrdersPro__order__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__OrdersPro__Produ__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Warehouse__produ__55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.FK__Warehouse__suppl__55F4C372" ManuallyRouted="false" />
+        <AssociationConnector Association="P5Model.StocksCategori" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

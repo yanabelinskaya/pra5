@@ -1,0 +1,65 @@
+﻿<Page x:Class="prakt5.Composition"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:prakt5"
+      mc:Ignorable="d" 
+      d:DesignHeight="405" d:DesignWidth="800"
+      Title="Composition"  
+      Loaded="Window_Loaded">
+    <Grid Background="#FFFFEE97">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="98*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="CompositionDgr"  Grid.ColumnSpan="1"  Grid.RowSpan="8" Background="#FFFFF7D0" BorderBrush="#FF7DA1C4"  HorizontalGridLinesBrush="White" VerticalGridLinesBrush="#FFFFF7D0" AlternatingRowBackground="#FFFFF7D0" RowBackground="#FFFFF7D0" RowHeight="30" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" SelectionChanged="EmployeesDgr_SelectionChanged" />
+        <TextBlock Grid.Column="2" Grid.Row="0" Text="Данные для заполнения" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" Margin="0,10,0,0" />
+        <TextBox x:Name="CompositionText"  Grid.Column="2" Grid.Row="1" Background="#FFFFEE97" Text="Состав продукта" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" />
+        <ComboBox x:Name="ProductCbx"  Grid.Column="2" Grid.Row="2" Background="#FFD4BF53" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" BorderBrush="#FFFFEE97" OpacityMask="Black" SelectionChanged="RoleCbx_SelectionChanged" />
+        <Button Content="Назад" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" Width="105" Click="Nazad">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button Content="Добавить" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Left" Width="105" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Изменить" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Center" Width="105" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Удалить" Grid.Column="2" Grid.Row="8" HorizontalAlignment="Right" Width="105" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>

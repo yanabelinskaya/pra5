@@ -1,0 +1,72 @@
+﻿<Page x:Class="prakt5.Pokupka"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:prakt5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Pokupka" >
+
+    <Grid Background="#FFFFEE97" Margin="10,0,-10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="51*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="343*"/>
+            <ColumnDefinition Width="61*"/>
+
+            <ColumnDefinition Width="396*" />
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="ProductsDgr"  Grid.ColumnSpan="1"  Grid.RowSpan="8" Background="#FFFFF7D0" BorderBrush="#FF7DA1C4"  HorizontalGridLinesBrush="White" VerticalGridLinesBrush="#FFFFF7D0" AlternatingRowBackground="#FFFFF7D0" RowBackground="#FFFFF7D0" RowHeight="30" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" Margin="0,64,0,52" />
+        <DataGrid x:Name="DataDgr"  Grid.Column="3"  Grid.RowSpan="8" Background="#FFFFF7D0" BorderBrush="#FF7DA1C4"  HorizontalGridLinesBrush="White" VerticalGridLinesBrush="#FFFFF7D0" AlternatingRowBackground="#FFFFF7D0" RowBackground="#FFFFF7D0" RowHeight="30" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" Margin="0,64,0,52" />
+
+        <TextBlock Grid.Column="2" Grid.Row="0" Text="Товары в чеке" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" Margin="0,10,0,0" Height="16"  />
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Все товары" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="14" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" Margin="0,10,0,0" Height="16"  />
+        <Button Content="+" Grid.Column="1" Grid.Row="1"  Click="Plus">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="-" Grid.Column="1" Grid.Row="3"  Click="Minus">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="Money" Grid.Column="0" Grid.Row="7" Background="#FFFFEE97" Text="Полная цена" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" />
+        <TextBox x:Name="Money2" Grid.Column="2" Grid.Row="7" Background="#FFFFEE97" Text="Сумма, которую дал клиент" FontSize="12" FontFamily="Cascadia Mono SemiBold" Foreground="#FFA0560C" />
+
+        <Button Content="Назад" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" Width="105" Click="Nazad">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Закрыть и выгрузить чек" Grid.Row="8" HorizontalAlignment="Left" Width="690" Click="Button_Click" Height="51"  VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="110,0,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEDDC87" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.185"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
